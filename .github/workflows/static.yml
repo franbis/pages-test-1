@@ -41,11 +41,10 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      # Create the .env file rather than using $GITHUB_ENV because Vite reads from it automatically
       - name: Setup Environment
         run: |
           REPO_NAME=${GITHUB_REPOSITORY##*/}
-          echo "VITE_BASE=/$REPO_NAME/" >> .env
+          echo "VITE_BASE=/$REPO_NAME/" >> $GITHUB_ENV
         env:
           GITHUB_REPOSITORY: ${{ github.repository }}
       
