@@ -11,5 +11,4 @@ This project is currently running, here's the [DEMO](https://franbis.github.io/p
 This repository has two branches:
 - `main` contains the web app source
 - `page/main` merges with `main` if it has important changes.
-<br>
-Whenever it's pushed, **GitHub Actions** builds the web app and serves it. This way, `main` doesn't contain anything **GitHub**-related
+<br>Whenever it's pushed, **GitHub Actions** builds the web app and serves it. This way, `main` doesn't contain anything **GitHub**-related
